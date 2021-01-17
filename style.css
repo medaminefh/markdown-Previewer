@@ -1,0 +1,72 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: border-box;
+}
+
+#app .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+#app .container .field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0.5em 0 2em;
+  border: 3px solid #222;
+}
+#app .container .field textarea {
+  padding-left: 0.5em;
+  resize: none;
+  width: 100%;
+  min-height: 80vmin;
+  max-height: 90%;
+  outline: none;
+  background-color: #aaa;
+}
+
+code {
+  background: #ccc;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+pre {
+  background: #ccc;
+  padding: 5px 0 5px 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid #222;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+i {
+  color: #112;
+}
+
+.title {
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .container .field {
+    padding: 1em;
+    border: 0;
+    border-bottom: 3px solid #222;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
