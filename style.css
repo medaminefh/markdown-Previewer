@@ -8,65 +8,80 @@
 
 #app .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: auto-fit;
+  grid-gap: 1em;
 }
 #app .container .field {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 1em 0.5em 0 2em;
-  border: 3px solid #222;
+  padding: 1em 1.5em;
+  border-bottom: 3px solid #333;
 }
 #app .container .field textarea {
-  padding-left: 0.5em;
+  padding: 0.5em;
   resize: none;
   width: 100%;
   min-height: 80vmin;
   max-height: 90%;
   outline: none;
-  background-color: #aaa;
+  font-size: 1.2em;
+  background-color: rgba(170, 170, 170, 0.856);
 }
-
-code {
+#app .container code {
   background: #ccc;
   padding: 1px 4px 2px 4px;
   font-size: 12px;
   font-weight: bold;
 }
-
-pre {
+#app .container pre {
   background: #ccc;
   padding: 5px 0 5px 5px;
 }
-
-table {
+#app .container table {
   border-collapse: collapse;
 }
-
-td,
-th {
+#app .container td,
+#app .container th {
   border: 2px solid #222;
   padding-left: 5px;
   padding-right: 5px;
 }
-
-i {
+#app .container i {
   color: #112;
 }
-
-.title {
+#app .container .title {
   text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 700px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
   .container .field {
     padding: 1em;
-    border: 0;
-    border-bottom: 3px solid #222;
+    border: 3px solid #222;
   }
 }
+/* #app {
+	.container {
+		display:grid;
+		grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  	grid-gap: 1rem;
+
+		.field {
+			position:relative;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			width:100%;
+			padding:1em 0.5em 0 2em;
+			border:3px solid #222;
+
+		}
+	}
+}
+} */
 
 /*# sourceMappingURL=style.css.map */
